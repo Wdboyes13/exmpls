@@ -1,0 +1,13 @@
+name: Run Python
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run
+        uses: Wdboyes13/uniwfs/.github/workflows/pystart.yml@main
+        with:
+          packages: 'requests flask numpy'
